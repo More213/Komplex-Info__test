@@ -35,7 +35,10 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
     margin-left: 32px;
     line-height: 1.2;
     position: relative;
-    bottom: 3px
+    width:350px;
+    max-width:500px ;
+    bottom: 3px;
+    flex-shrink:2
 }
 .header_logo{
     justify-content: flex-start;

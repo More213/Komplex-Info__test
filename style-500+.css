@@ -1,5 +1,5 @@
 header{
-    height: 130px
+    height: 55px
 }
 .content,
 header,
@@ -11,61 +11,76 @@ header,
 }
 .head{
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
 }
 .mobil-menu label.toggleMenu{
     background: url(img/icons8-%D0%BC%D0%B5%D0%BD%D1%8E-filled2.svg) no-repeat;
-    background-size:100%;
+    background-size:75%;
     display:block;
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     text-transform:uppercase;
     cursor:pointer;
     position: relative;
-    bottom: 57px;
-    margin-left:20px ;
+    top:5px;
+    margin-left:15px ;
     z-index:9999
 }    
 .mobil-menu{
     position: absolute;
-    top: 70px
+    top: 5px;
+    overflow:hidden;
 }
  .menu{
-    min-width: 500px;
-     max-width:100%;
-    max-height:0px;
+    position: fixed;
+     width: 250px;
+     height:1000px ;
+    max-width:0px;
     overflow:hidden;
-    position:relative;
     background:#3f7594;
-    -webkit-transition:max-height 0.4s linear;
-    -moz-transition:max-height 0.4s linear;
-    transition:max-height 0.4s linear;
-     flex-direction: column;
-    align-items: center
+    -webkit-transition:max-width 0.1s linear;
+    -moz-transition:max-width 0.1s linear;
+    transition:max-width 0.1s linear;
+    flex-direction: column;
+    
 }
 .menu>li{
-    margin-right: 0;
-    padding-bottom: 10px;
-    padding-top: 30px;
-    font-size: 20px
+    margin-right:50px;
+    padding-bottom:10px;
+    margin-left:20px;
+    padding-top:30px;
+    font-size: 15px;
+    
 }
 input.toggleMenu:checked ~ .menu{
     max-height:1000px;
+    max-width:250px;
+    
 }
 .main-menu>.phone{
     display: none
+}
+.head__tagline>p{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 2px
 }
 .header_logo{
     justify-content: flex-start;
     display: flex;
     align-items:center;
     flex-direction: row;
-    margin-left: 85px;
-    margin-top: 21px
+    margin-left: 60px;
+    margin-top: 7px
+}
+.logo__img{
+    width:70px;
+    height: 37px;
+    background-size:cover;
 }
 @media screen and (max-width:604px){
    .header_logo{
-    margin-top:0px
+
 }
 }
 .content_inf{
