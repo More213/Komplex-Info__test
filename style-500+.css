@@ -1,0 +1,74 @@
+header{
+    height: 130px
+}
+.content,
+header,
+.mobil-menu,
+.main-menu,
+.head{
+    width: 100%;
+    max-width: 1000px;
+}
+.head{
+    flex-direction: column;
+    align-items: flex-start
+}
+.mobil-menu label.toggleMenu{
+    background: url(img/icons8-%D0%BC%D0%B5%D0%BD%D1%8E-filled2.svg) no-repeat;
+    background-size:100%;
+    display:block;
+    width:60px;
+    height:60px;
+    text-transform:uppercase;
+    cursor:pointer;
+    position: relative;
+    bottom: 57px;
+    margin-left:20px ;
+    z-index:9999
+}    
+.mobil-menu{
+    position: absolute;
+    top: 70px
+}
+ .menu{
+    min-width: 500px;
+     max-width:100%;
+    max-height:0px;
+    overflow:hidden;
+    position:relative;
+    background:#3f7594;
+    -webkit-transition:max-height 0.4s linear;
+    -moz-transition:max-height 0.4s linear;
+    transition:max-height 0.4s linear;
+     flex-direction: column;
+    align-items: center
+}
+.menu>li{
+    margin-right: 0;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-size: 20px
+}
+input.toggleMenu:checked ~ .menu{
+    max-height:1000px;
+}
+.main-menu>.phone{
+    display: none
+}
+.header_logo{
+    justify-content: flex-start;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    margin-left: 85px;
+    margin-top: 21px
+}
+@media screen and (max-width:604px){
+   .header_logo{
+    margin-top:0px
+}
+}
+.content_inf{
+    min-width: 460px;
+    max-width: 960px;
+}

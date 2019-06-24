@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: Tahoma;
+    list-style-type: none
+}
+header{
+    width: 100%;
+    height: 116px;
+    background: #3f7594;
+    -webkit-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+-moz-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+}
+.head{
+    height: 100%;
+    min-width:500px ;
+   max-width: 1170px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head a,
+.head p, 
+.head li{
+    color: #fff
+}
+.head__tagline>p{
+    font-size: 35px;
+    width: auto;
+    margin-left: 32px;
+    line-height: 1.2;
+    position: relative;
+    bottom: 3px
+}
+.header_logo{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+.header_logo>.phone{
+    display: none
+}
+.logo__img{
+    height:77px;
+    width: 151px
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    height: 77px;
+    justify-content: space-between;
+    align-items: flex-end
+        
+}
+.main-menu li{
+    font-size: 20px;
+    margin-right: 25px;
+    text-transform: uppercase
+}
+.main-menu li:last-child{
+    margin-right: 0
+}
+.main-menu>.phone{
+    font-size: 24px;
+    text-align: right
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    
+}
+.menu__activ{
+    padding-bottom:12px;
+    border-bottom: #fff solid 3px;
+}
+.mobil-menu [type="checkbox"]{
+     display:none;
+}
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+.content_inf{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.gallery{
+    min-width: 460px;
+    max-width:756px;
+    height: 408px;
+    display: flex;
+    
+}
+.enlarged{
+    min-width: 460px;
+    max-width: 960px
+}
+.enlarged__img{
+    min-width: 460px;
+    max-width: 100%;
+    background-size:cover;
+}
+.slider{
+    width:127px;
+    display: flex;
+    flex-direction: column;
+}
+.slider__little__img{
+    max-width:127px;
+    background-size:cover;
+}
