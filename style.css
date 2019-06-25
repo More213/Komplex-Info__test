@@ -45,7 +45,7 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
     display: flex;
     flex-direction: row;
 }
-.header_logo>.phone{
+.icon__phone{
     display: none
 }
 .logo__img{
@@ -81,7 +81,8 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
     padding-bottom:12px;
     border-bottom: #fff solid 3px;
 }
-.mobil-menu [type="checkbox"]{
+.mobil-menu [type="checkbox"],
+.icon__phone [type="checkbox"]{
      display:none;
 }
 .content{

@@ -13,6 +13,7 @@ header,
     flex-direction: column;
     align-items: flex-start;
 }
+
 .mobil-menu label.toggleMenu{
     background: url(img/icons8-%D0%BC%D0%B5%D0%BD%D1%8E-filled2.svg) no-repeat;
     background-size:75%;
@@ -78,12 +79,46 @@ input.toggleMenu:checked ~ .menu{
     height: 37px;
     background-size:cover;
 }
-@media screen and (max-width:604px){
-   .header_logo{
-
+@media screen and (max-width:640px){
+    .icon__phone{
+        position: absolute;
+        top: 10px;
+    }
+   .icon__phone label.toggle__phone{
+    background: url(img/icon-phone-38.png) no-repeat;
+    display:block;
+    width:14px;
+    height:39px;
+    text-transform:uppercase;
+    cursor:pointer;
+    position:absolute;
+    z-index:9999;
+    right: 0px
+}    
+input.toggle__phone:checked ~ .icon__phone>p{
+    height:1000px;
+    width:250px;
+    color: #000;
+}
+    .icon__phone>menu_phone__toggle{
+    position:absolute;
+    color: #000;
+     width: 250px;
+    max-height:0px;
+    overflow:hidden;
+    background:#3f7594;
+    -webkit-transition:max-height 0.1s linear;
+    -moz-transition:max-height 0.1s linear;
+    transition:max-height 0.1s linear;
+    
 }
 }
 .content_inf{
     min-width: 460px;
     max-width: 960px;
+}
+.icon__phone{
+    display: block;
+    position: absolute;
+    right: 15px;
 }
