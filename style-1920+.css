@@ -1,0 +1,35 @@
+
+header{
+    width: 100%;
+    height: 140px;
+}
+.head{
+    height: 100%;
+    min-width:500px ;
+   max-width: 1520px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head a,
+.head p, 
+.head li{
+    color: #fff
+}
+.head__tagline>p{
+    width: auto;
+    max-width:520px ;
+}
+
+.main-menu li{
+    font-size: 23px;
+    margin-right: 25px;
+    text-transform: uppercase
+}
+
+.main-menu>.phone{
+    font-size: 25px;
+    text-align: right
+}
