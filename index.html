@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-1000+.css" media="only screen and (max-width:1224px)"/>
     <link rel="stylesheet" href="style-500+.css" media="only screen and (max-width:1000px)"/>
+    <link rel="stylesheet" href="mobil-style.css" media="only screen and (max-device-width:1000px)"/>
     <link rel="stylesheet" href="style-1920+.css" media="only screen and (min-width:1920px)"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
 </head>
 <body>
     <div class="body">
@@ -54,8 +55,9 @@
                     <div class="enlarged">
                         <img src="img/img-slider.jpg" style="" alt="" class="enlarged__img">
                         <div class="enlarged__paragraph">
+                           <div class="wrap">
                             <h2>Симметричный гипергенный минерал</h2>
-                            <p>Гидродинамический удар, вследствие пространственной неоднородности почвенного покрова, искажает ламинарный осциллятор. </p>
+                            <p>Гидродинамический удар, вследствие пространственной неоднородности почвенного покрова, искажает ламинарный осциллятор. </p></div>
                         </div>
                     </div>
                     <div class="slider">
@@ -77,10 +79,14 @@
             </div>
         </div>
         <div class="hidden_grya">
-            <div class="contact__background__gray"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="#000" points="0,0 0,60 100,60"/>
-  </svg>
-</div>
+            <div class="contact__background__gray"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon fill="#808d9d" points="0,0 0,100 100,100 100,75 "/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" style="z-index: -1">
+                    <polygon fill="#dadada" points="100,100 0,10 100,10"/>
+                </svg>
+            </div>
             <div class="contact__background"></div>
             <div class="contact__inf"></div>
         </div>
