@@ -23,10 +23,16 @@
     margin-right: 0px
 }
 
+.enlarged__paragraph{
+    position:absolute;
+    min-width:10%;
+}
  .enlarged__paragraph>.wrap{
     max-width:90%;
     font-size: 10px;
-    margin: 20px 0px 20px 20px
+     min-width: 410px;
+    max-width: 440px;
+     font-size: 13px
     }
 .enlarged__paragraph{
     padding: 0px;

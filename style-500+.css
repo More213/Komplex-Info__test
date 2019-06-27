@@ -1,10 +1,14 @@
 header{
-    height: 55px
+    height: 55px;
+        position: fixed;
+    z-index: 999;
+    top: 0px
 }
 
 header,
 .mobil-menu,
 .main-menu,
+.content__footer,
 .head{
     width: 100%;
     max-width: 1000px;
@@ -14,7 +18,9 @@ header,
     flex-direction: column;
     align-items: flex-start;
 }
-
+.bread_crumbs{  
+    margin-left: 15px
+}
 .mobil-menu label.toggleMenu{
     background: url(img/icons8-%D0%BC%D0%B5%D0%BD%D1%8E-filled2.svg) no-repeat;
     background-size:75%;
@@ -48,12 +54,12 @@ header,
     
 }
 .menu>li{
-    margin-right:50px;
-    padding-bottom:10px;
+    margin-right:0px;
+    padding-bottom:11px;
     margin-left:20px;
     padding-top:30px;
     font-size: 15px;
-    
+    border-bottom: rgba(255, 255, 255, 0) solid 4px;
 }
 input.toggleMenu:checked ~ .menu{
     max-height:1000px;
@@ -63,10 +69,15 @@ input.toggleMenu:checked ~ .menu{
 .main-menu>.phone{
     display: none
 }
+.icon__phone {
+    display: block;
+    right: 15px;
+    position: absolute;
+}
 .head__tagline>p{
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 2px
+    margin-top: 5px
 }
 .header_logo{
     justify-content: flex-start;
@@ -74,17 +85,106 @@ input.toggleMenu:checked ~ .menu{
     align-items:center;
     flex-direction: row;
     margin-left: 60px;
-    margin-top: 7px
+    margin-top: 9px
+}
+.contact__flex{
+    max-width: 1000px;
+}
+@media screen and (max-width:620px){
+.icon__phone {
+    left:150px;
+   top: 27px;
+}
+.head__tagline>p{
+    margin-top: 2px
+}
+.header_logo{
+    align-items:flex-start;
+    margin-top: 9px
+}
 }
 .logo__img{
     width:70px;
     height: 37px;
     background-size:cover;
 }
+.contact__flex{
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: flex-end
+}
 .content_inf{
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    
 }
+ .content_inf>.gallery{
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact__inf{
+    position: relative;
+    z-index: 2;
+    max-width:1000px;
+    min-width: 450px;
+    top: -190px;
+    margin-left:10px;
+}
+.contact__inf,
+.contact__flex{
+    max-width: 450px;
+}
+.contact__name{
+    max-width: 800px;
+        min-width: 550px
+}
+@media screen and (max-width:920px){
+    .contact__name{
+    max-width: 800px;
+        min-width: 500px
+}
+}
+@media screen and (max-width:860px){
+    .contact__name{
+    max-width: 800px;
+        min-width: 450px
+}
+}
+@media screen and (max-width:810px){
+    .contact__name{
+    max-width: 800px;
+        min-width: 400px
+}
+}
+@media screen and (max-width:760px){
+    .contact__name{
+    max-width: 800px;
+        min-width: 320px
+}
+}
+@media screen and (max-width:680px){
+    .contact__name{
+    max-width: 800px;
+        min-width: 240px
+}
+}
+@media screen and (max-width:640px){
+    .contact__flex{
+    flex-direction:column;
+    justify-content:center;
+    align-items: center
+}
+    .contact__name{
+    max-width: 800px;
+        min-width: 450px
+}
+    .contact__inf{
+    margin-left: 15px;
+        margin-right: auto;
+        
+}
+}
+
 .enlarged,
 .enlarged__img,
 .gallery{
@@ -96,22 +196,55 @@ input.toggleMenu:checked ~ .menu{
     margin-right: auto;
     min-width:610px;
 }
-
-@media screen and (max-width:640px){
-    .menu_phone__toggle>p{
-    display: none ;
+.content_inf{
+    margin-bottom: 0px
 }
-        
+.hidden_grya{
+    position: relative;
+    min-width: 450px;
+    max-width:1000px;
+    height:500px;
+}
+.contact__background__grau{
+    position: relative;
+    height: 800px;
+}
+.contact__background__grau__two{
+   max-width:100%;
+    min-width: 0px;
+    background: #808d9d;
+    height: 300px;
+    position: relative;
+    top: 250px;
+    z-index: -9
+}   
+@media screen and (max-width:640px){
+ 
+    footer{
+    position: relative;
+    z-index: 2;
+    bottom: -500px 
+}
+    .content__footer{
+    justify-content: space-around
+}
+        .contact__flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
     .gallery{
     position:relative;
     min-width: 450px;
     max-width: 450px;
     height: 408px;
     display:flex;
+        
 }
     .content_inf>.information{
     margin-left: auto;
     margin-right: auto;
+    max-width:400px ;
    min-width:450px;
 }   
 .enlarged{
@@ -122,15 +255,21 @@ input.toggleMenu:checked ~ .menu{
     margin-right: 0px
 }
 
- .enlarged__paragraph>.wrap{
-    max-width:90%;
-    font-size: 10px;
-    margin: 20px 0px 20px 20px
-    }
+.enlarged__paragraph>.wrap{
+    position:absolute;
+    min-width: 410px;
+    max-width: 450px;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    height: auto;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0) 100%);
+    font-size: 14px;
+}
 .enlarged__paragraph{
-    padding: 0px;
-    min-width:100px;
-    }
+    position:absolute;
+    min-width:10%;
+}
 .enlarged__img{
     max-width: 450px;
     min-width: 450px;
@@ -163,5 +302,41 @@ input.toggleMenu:checked ~ .menu{
 .slider__little:nth-child(4){
          margin-right: 0px
     }
+ .contact__background__grau__two{
+   max-width:100%;
+    min-width: 0px;
+    background: #808d9d;
+    height: 300px;
+    position: relative;
+    top: 500px;
+    z-index: -9
+} 
+footer{
+    position: relative;
+    z-index: 2;
+   top:300px
+}
 }
 
+.footer__left,
+.footer__right{
+    font-size: 10px;
+    width: 170px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+.footer__center{
+    width: 90px;
+    height: 50px
+}
+
+footer{
+    height:130px ;
+    position: relative;
+    z-index: 2;
+    bottom: -50px 
+}
+.contact__headline{
+    text-align: left;
+    font-size: 35px
+}

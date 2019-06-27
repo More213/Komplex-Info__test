@@ -1,5 +1,8 @@
 .head,
-.content{
+.contact__inf,
+.contact__flex,
+.content,
+.content__footer{
    max-width: 1130px;
 }
 .main-menu li{
@@ -8,22 +11,27 @@
 
     .content_inf{
     justify-content:space-between;
+        margin-bottom: 30px
     
 }
     .content_inf>.gallery{
     height:auto;
     max-width:960px;
-    margin-left: auto;
-    margin-right:auto;
     flex-direction: column;
+          margin-right:0px
+}
+
+.content_inf>.information{
+    position:relative;
+    min-width: 0px;
+    max-width:500px;
+    flex-shrink:1;
 }
 .slider{
-    
     flex-direction:row;
     max-width:100%;
 }
 .slider__little{
-    justify-content: space-between;
     margin-right:26px;
 }
 .slider__little__img{
@@ -31,9 +39,13 @@
     min-width: 50px;
     background-size: cover;
 }
+.enlarged{
+    max-width:610px;
+    margin-bottom: 10px
+}
    .enlarged__img{
     min-width: 460px;
-    max-width:960px;
+    max-width:610px;
     height: auto;
 }
 .enlarged__paragraph{
@@ -43,21 +55,84 @@
 }
 @media screen and (max-width:1150px){
     .head,
-    .content{
+    .contact__inf,
+    .contact__flex,
+    .content,
+    .content__footer{
    max-width: 1070px;
 }
+    .contact__name{
+    max-width: 700px;
+        min-width: 600px
+}
+
 }
 @media screen and (max-width:1100px){
     .head,
+    .content__footer,
+    .contact__inf,
+    .contact__flex,
     .content{
    max-width: 1020px;
 }   
-
-
+.contact__name{
+    max-width: 600px;
+        min-width: 600px
+}
 }
 @media screen and (max-width:1050px){
     .head,
+    .contact__inf,
+    .contact__flex,
+    .content__footer,
     .content{
    max-width: 980px;
 }
+}
+.contact__inf{
+    position: relative;
+    z-index: 2;
+    width:1130px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px
+}
+.contact__headline{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300
+}
+.contact__cart{
+    position: relative;
+    top:0px;
+    flex-shrink: 0;
+    background: #3f7594;
+    width: 317px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+.name__gerl{
+
+    width: 300px;
+    -webkit-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+    -moz-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.51);
+}    
+.contact__cart>p{
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+}
+.hidden_grya{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.contact__name{
+    max-width: 800px;
+        min-width: 600px
 }

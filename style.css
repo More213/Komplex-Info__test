@@ -6,6 +6,12 @@
     font-family: Tahoma;
     list-style-type: none
 }
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
 header{
     width: 100%;
     height: 116px;
@@ -65,6 +71,10 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
     margin-right: 25px;
     text-transform: uppercase
 }
+.main-menu li:hover{
+        padding-bottom:12px;
+    border-bottom: #fff solid 3px;
+}
 .main-menu li:last-child{
     margin-right: 0
 }
@@ -80,6 +90,9 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
 .menu__activ{
     padding-bottom:12px;
     border-bottom: #fff solid 3px;
+}
+.icon__phone{
+    display: none
 }
 .mobil-menu [type="checkbox"],
 .icon__phone [type="checkbox"]{
@@ -131,6 +144,7 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
     min-width: 460px;
     max-width: 600px;
     bottom: 0px;
+  
     color: #fff;
     padding: 20px;
     height: auto;
@@ -140,12 +154,12 @@ box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
     position:absolute;
     min-width:91%;
 }
-.enlarged__paragraph>h2{
-    font-weight: 300;
+.enlarged__paragraph>.wrap>h2{
+    font-weight: 20;
 }
 .enlarged__img{
     min-width: 460px;
-    max-width:960px;
+    max-width:605px;
     height: auto;
     background-size:cover;
 }
@@ -185,4 +199,116 @@ svg {
   width: 100%;
   height:450px;
   /* set height to pixels if you want angle to change with screen width */
+}
+
+.contact__background__gray{
+        z-index: 1
+}
+.contact__inf{
+    position: relative;
+    z-index: 2;
+    width:1170px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px
+}
+.contact__flex{
+    position: relative;
+    top:20px ;
+    max-width: 1170px;
+    min-width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: auto;
+}
+.contact__headline{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300
+}
+.contact__cart{
+    position: relative;
+    background: #3f7594;
+    width: 317px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 20px
+}
+.contact__name{
+    color:#fff ;
+    max-width: 850px;
+    min-width:450px;
+}
+.contact__name>h2{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px
+}
+.contact__name>table{
+    font-size: 20px;
+    margin-bottom: 10px
+}
+.contact__name_table{
+    width:110px ;
+}
+.contact__name>p{
+    font-size: 16px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    color: #fff;
+    margin-bottom: 10px
+}
+.name__gerl{
+    
+    width: 300px;
+    -webkit-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+    -moz-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.51);
+}    
+.contact__cart>p{
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+}
+footer{
+    background: #000;
+    height: 102px
+}
+.content__footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #fff
+}
+.footer__td{
+    vertical-align: top;
+    width: 1px
+}
+.footer__left,
+.footer__right{
+    font-size: 13px;
+    width: 250px
+}
+.footer__right{
+    text-align: right
+}
+.footer__right p{
+    margin-bottom: 10px
+}
+.footer__center{
+    width: 119px;
+    height: 61px;
 }

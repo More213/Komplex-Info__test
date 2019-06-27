@@ -24,12 +24,102 @@ header{
 }
 
 .main-menu li{
-    font-size: 23px;
     margin-right: 25px;
     text-transform: uppercase
 }
 
 .main-menu>.phone{
-    font-size: 25px;
     text-align: right
+}
+.content__footer,
+.contact__inf,
+.contact__flex{
+    min-width: 1520px
+}
+.slider__little{
+    max-width:130px;
+     margin-bottom: 27px;
+}
+.contact__flex{
+    justify-content: space-between
+}
+.contact__name{
+    max-width:1200px;
+    min-width: 1000px
+        
+}
+.content{
+    min-width:500px ;
+   max-width: 1520px;
+}
+.content_inf{
+    justify-content: space-between;
+   max-width: 1520px;
+}
+.gallery{
+    position:relative;
+    min-width: 628px;
+    max-width: 1300px;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    margin-right: 30px
+}
+.content_inf>.information{
+    position:relative;
+    min-width: 0px;
+    max-width:700px;
+    flex-shrink:1;
+   
+}
+.content_inf>.information>.information__text>p{
+    font-size: 20px
+}
+.enlarged{
+    min-width: 460px;
+    max-width:1000px;
+    margin-right: 20px
+}
+.enlarged__img{
+    min-width: 460px;
+    max-width:650px;
+    height: auto;
+    background-size:cover;
+}
+.enlarged__paragraph>.wrap{
+    position:absolute;
+    min-width: 460px;
+    max-width:1000px;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    height: auto;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0) 100%);
+}
+.enlarged__paragraph{
+    position:absolute;
+    min-width:82%;
+}
+.contact__cart{
+
+    width: 420px;
+    height: 340px
+}
+.name__gerl{
+    width: 360px;
+}
+.contact__name h2{
+    font-size: 35px
+}
+.contact__cart p,
+.contact__name p{
+    font-size: 20px
+}
+.contact__flex{
+    position: relative;
+    top:0px ;
+
+}
+.contact__inf{
+    top: 45px
 }
