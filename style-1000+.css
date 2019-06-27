@@ -3,27 +3,27 @@
 .contact__flex,
 .content,
 .content__footer{
-   max-width: 1130px;
+    max-width:1130px;
 }
 .main-menu li{
-    font-size: 17px;
+    font-size:17px;
 }
 
-    .content_inf{
+.content_inf{
     justify-content:space-between;
-        margin-bottom: 30px
+    margin-bottom:30px
     
 }
-    .content_inf>.gallery{
+.content_inf>.gallery{
     height:auto;
     max-width:960px;
-    flex-direction: column;
-          margin-right:0px
+    flex-direction:column;
+    margin-right:0px
 }
 
 .content_inf>.information{
     position:relative;
-    min-width: 0px;
+    min-width:0px;
     max-width:500px;
     flex-shrink:1;
 }
@@ -35,23 +35,23 @@
     margin-right:26px;
 }
 .slider__little__img{
-    max-width: 140px;
-    min-width: 50px;
-    background-size: cover;
+    max-width:140px;
+    min-width:50px;
+    background-size:cover;
 }
 .enlarged{
     max-width:610px;
-    margin-bottom: 10px
+    margin-bottom:10px
 }
-   .enlarged__img{
-    min-width: 460px;
+.enlarged__img{
+    min-width:460px;
     max-width:610px;
-    height: auto;
+    height:auto;
 }
 .enlarged__paragraph{
     position:relative;
     min-width:98%;
-    bottom: 3px
+    bottom:3px
 }
 @media screen and (max-width:1150px){
     .head,
@@ -59,11 +59,11 @@
     .contact__flex,
     .content,
     .content__footer{
-   max-width: 1070px;
+    max-width:1070px;
 }
     .contact__name{
-    max-width: 700px;
-        min-width: 600px
+    max-width:700px;
+    min-width:600px
 }
 
 }
@@ -73,11 +73,11 @@
     .contact__inf,
     .contact__flex,
     .content{
-   max-width: 1020px;
+    max-width:1020px;
 }   
-.contact__name{
-    max-width: 600px;
-        min-width: 600px
+    .contact__name{
+    max-width:600px;
+    min-width:600px
 }
 }
 @media screen and (max-width:1050px){
@@ -86,53 +86,53 @@
     .contact__flex,
     .content__footer,
     .content{
-   max-width: 980px;
+    max-width:980px;
 }
 }
 .contact__inf{
-    position: relative;
-    z-index: 2;
+    position:relative;
+    z-index:2;
     width:1130px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50px
+    margin-left:auto;
+    margin-right:auto;
+    top:50px
 }
 .contact__headline{
-    text-align: center;
-    font-size: 35px;
-    font-weight: 300
+    text-align:center;
+    font-size:35px;
+    font-weight:300
 }
 .contact__cart{
-    position: relative;
+    position:relative;
     top:0px;
-    flex-shrink: 0;
-    background: #3f7594;
-    width: 317px;
-    height: 308px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 10px;
+    flex-shrink:0;
+    background:#3f7594;
+    width:317px;
+    height:308px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top:10px;
 }
-.name__gerl{
+.name__girl{
 
-    width: 300px;
-    -webkit-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
-    -moz-box-shadow: 6px 7px 10px -5px rgba(0,0,0,0.51);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.51);
+    width:300px;
+    -webkit-box-shadow:6px 7px 10px -5px rgba(0,0,0,0.51);
+    -moz-box-shadow:6px 7px 10px -5px rgba(0,0,0,0.51);
+    box-shadow:2px 2px 2px 1px rgba(0,0,0,0.51);
 }    
 .contact__cart>p{
-    color: #fff;
-    padding: 20px;
-    font-size: 16px;
+    color:#fff;
+    padding:20px;
+    font-size:16px;
 }
-.hidden_grya{
-    position: relative;
-    width: 100%;
-    height: 450px;
+.hidden_gray{
+    position:relative;
+    width:100%;
+    height:450px;
 }
 .contact__name{
-    max-width: 800px;
-        min-width: 600px
+    max-width:800px;
+    min-width:600px
 }
