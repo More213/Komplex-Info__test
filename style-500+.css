@@ -87,9 +87,7 @@ input.toggleMenu:checked ~ .menu{
     margin-left:60px;
     margin-top:9px
 }
-.contact__flex{
-    max-width:1000px;
-}
+
 @media screen and (max-width:620px){
     .icon__phone {
     left:150px;
@@ -108,11 +106,7 @@ input.toggleMenu:checked ~ .menu{
     height:37px;
     background-size:cover;
 }
-.contact__flex{
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:flex-end
-}
+
 .content_inf{
     flex-direction:column;
     justify-content:center;
@@ -122,69 +116,6 @@ input.toggleMenu:checked ~ .menu{
     margin-left:auto;
     margin-right:auto;
 }
-.contact__inf{
-    position:relative;
-    z-index:2;
-    max-width:1000px;
-    min-width:450px;
-    top:-190px;
-    margin-left:10px;
-}
-.contact__inf,
-.contact__flex{
-    max-width:450px;
-}
-.contact__name{
-    max-width:800px;
-    min-width:550px
-}
-@media screen and (max-width:920px){
-    .contact__name{
-    max-width:800px;
-    min-width:500px
-}
-}
-@media screen and (max-width:860px){
-    .contact__name{
-    max-width:800px;
-    min-width:450px
-}
-}
-@media screen and (max-width:810px){
-    .contact__name{
-    max-width:800px;
-    min-width:400px
-}
-}
-@media screen and (max-width:760px){
-    .contact__name{
-    max-width:800px;
-    min-width:320px
-}
-}
-@media screen and (max-width:680px){
-    .contact__name{
-    max-width:800px;
-    min-width:240px
-}
-}
-@media screen and (max-width:640px){
-    .contact__flex{
-    flex-direction:column;
-    justify-content:center;
-    align-items:center
-}
-    .contact__name{
-    max-width:800px;
-    min-width:450px
-}
-    .contact__inf{
-    margin-left:15px;
-    margin-right:auto;
-        
-}
-}
-
 .enlarged,
 .enlarged__img,
 .gallery{
@@ -199,25 +130,11 @@ input.toggleMenu:checked ~ .menu{
 .content_inf{
     margin-bottom:0px
 }
-.hidden_gray{
-    position:relative;
-    min-width:450px;
-    max-width:1000px;
-    height:500px;
-}
+
 .contact__background__grau{
     position:relative;
     height:800px;
-}
-.contact__background__grau__two{
-   max-width:100%;
-    min-width:0px;
-    background:#808d9d;
-    height:300px;
-    position:relative;
-    top:250px;
-    z-index:-9
-}   
+}  
 @media screen and (max-width:640px){
  
     footer{
@@ -228,11 +145,7 @@ input.toggleMenu:checked ~ .menu{
     .content__footer{
     justify-content:space-around
 }
-    .contact__flex{
-    flex-direction:column;
-    justify-content:center;
-    align-items:flex-start
-}
+
     .gallery{
     position:relative;
     min-width:450px;
@@ -317,7 +230,6 @@ input.toggleMenu:checked ~ .menu{
     top:300px
 }
 }
-
 .footer__left,
 .footer__right{
     font-size:10px;
@@ -329,14 +241,120 @@ input.toggleMenu:checked ~ .menu{
     width:90px;
     height:50px
 }
-
 footer{
     height:130px ;
     position:relative;
     z-index:2;
     bottom:-50px 
 }
+
+
+.hidden_gray{
+    position:relative;
+    min-width:450px;
+    max-width:1000px;
+    height:500px;
+}
+.contact__background__grau{
+    position:relative;
+    height:800px;
+}
+.contact__background__grau__two{
+    max-width:100%;
+    min-width:0px;
+    background:#808d9d;
+    height:300px;
+    position:relative;
+    top:500px;
+    z-index:-9
+} 
+
 .contact__headline{
     text-align:left;
     font-size:35px
 }
+
+.contact__flex{
+    min-width:460px
+     max-width:100%;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin-left: 10px;
+    align-items:flex-end
+}
+
+.contact__inf{
+    position:relative;
+    z-index:2;
+    max-width:100%;
+    min-width:450px;
+    
+    top:-190px;
+    flex-shrink:10;
+}
+
+@media screen and (max-width:640px){
+    .contact__flex{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+}
+
+.hidden_gray{
+    position:relative;
+    min-width:450px;
+    max-width:1000px;
+    height:500px;
+}
+.contact__background__grau{
+    position:relative;
+    height:800px;
+}
+.contact__background__grau__two{
+   max-width:100%;
+    min-width:0px;
+    background:#808d9d;
+    height:300px;
+    position:relative;
+    top:250px;
+    z-index:-9
+}   
+@media screen and (max-width:640px){
+    .contact__flex{
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+.contact__background__grau__two{
+    max-width:100%;
+    min-width:0px;
+    background:#808d9d;
+    height:300px;
+    position:relative;
+    top:500px;
+    z-index:-9
+} 
+.contact__name>h2{
+    margin-left: 0px;
+}
+.contact__name>table{
+    margin-left: 0px;
+}
+.contact__name>p{
+    margin-left:0px;
+}
+    .line{
+    margin-left:0px;
+    width: 100%
+}
+}
+
+.contact__headline{
+    text-align:left;
+    font-size:35px;
+    margin-left: 10px
+}
+
+
+

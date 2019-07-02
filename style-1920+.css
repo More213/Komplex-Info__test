@@ -43,11 +43,7 @@ header{
 .contact__flex{
     justify-content:space-between
 }
-.contact__name{
-    max-width:1200px;
-    min-width:1000px
-        
-}
+
 .content{
     min-width:500px ;
     max-width:1520px;

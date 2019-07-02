@@ -188,95 +188,13 @@ header{
     font-size:15px;
     margin-bottom:20px
 }
-.hidden_gray{
-    position:relative;
-    width:100%;
-    height:450px;
-}
-svg {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:450px;
-}
-
-.contact__background__gray{
-        z-index:1
-}
-.contact__inf{
-    position:relative;
-    z-index:2;
-    width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    top:50px
-}
-.contact__flex{
-    position:relative;
-    top:20px ;
-    max-width:1170px;
-    min-width:450px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:flex-end;
-    height:auto;
-}
-.contact__headline{
-    text-align:center;
-    font-size:35px;
-    font-weight:300
-}
-.contact__cart{
-    position:relative;
-    background:#3f7594;
-    width:317px;
-    height:308px;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items:center;
-    padding-top:10px;
-    margin-right:20px
-}
-.contact__name{
-    color:#fff ;
-    max-width:850px;
-    min-width:450px;
-}
-.contact__name>h2{
-    font-size:32px;
-    font-weight:300;
-    margin-bottom:20px
-}
-.contact__name>table{
-    font-size:20px;
-    margin-bottom:10px
-}
-.contact__name_table{
-    width:110px ;
-}
-.contact__name>p{
-    font-size:16px;
-}
 .line{
     width:100%;
     height:1px;
     color:#fff;
     margin-bottom:10px
 }
-.name__girl{
-    
-    width:300px;
-    -webkit-box-shadow:6px 7px 10px -5px rgba(0,0,0,0.51);
-    -moz-box-shadow:6px 7px 10px -5px rgba(0,0,0,0.51);
-    box-shadow:2px 2px 2px 1px rgba(0,0,0,0.51);
-}    
-.contact__cart>p{
-    color:#fff;
-    padding:20px;
-    font-size:16px;
-}
+
 footer{
     background:#000;
     height:102px
@@ -310,4 +228,144 @@ footer{
 .footer__center{
     width:119px;
     height:61px;
+}
+
+
+.hidden_gray{
+    position:relative;
+    width:100%;
+    height:450px;
+}
+svg {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:450px;
+}
+
+.contact__background__gray{
+        z-index:1
+}
+
+.content__footer{
+    margin-left:auto;
+    margin-right:auto;
+    width:1170px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+    color:#fff
+}
+.footer__td{
+    vertical-align:top;
+    width:1px
+}
+.footer__left,
+.footer__right{
+    font-size:13px;
+    width:250px
+}
+.footer__right{
+    text-align:right
+}
+.footer__right p{
+    margin-bottom:18px
+}
+.footer__center{
+    width:119px;
+    height:61px;
+}
+
+.contact__inf{
+    position:relative;
+    z-index:2;
+    min-width:450px ;
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    top:50px
+}
+.contact__flex{
+    position:relative;
+    top:20px ;
+    max-width:1170px;
+    min-width:450px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-end;
+    height:auto;
+}
+.contact__headline{
+    text-align:center;
+    font-size:35px;
+    font-weight:300
+}
+.contact__cart{
+    position:relative;
+    background:#3f7594;
+    width:317px;
+    height:308px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top:10px;
+
+
+}
+.contact__name{
+    position: relative;
+    color:#fff ;
+    width:auto;
+    height: auto;
+    min-width:300px;
+    max-width:90%
+}
+.contact__name>h2{
+    font-size:32px;
+    font-weight:300;
+    margin-bottom:20px;
+        margin-left: 20px;
+}
+.contact__name>table{
+    font-size:20px;
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+.contact__name_table{
+    width:110px ;
+    
+}
+.contact__name>p{
+    position: relative;
+    font-size:16px;
+    min-width: 250px;
+width:90%;
+    margin-left: 20px;
+    height: auto;
+    
+}
+.line{
+    width:90%;
+    height:1px;
+    color:#fff;
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+.name__girl{
+    
+    width:300px;
+    margin-left: 10px;
+    margin-right:10px;
+    -webkit-box-shadow:6px 7px 10px -5px rgba(0,0,0,0.51);
+    -moz-box-shadow:6px 7px 10px -5px rgba(0,0,0,0.51);
+    box-shadow:2px 2px 2px 1px rgba(0,0,0,0.51);
+}    
+.contact__cart>p{
+    color:#fff;
+    padding:20px;
+    font-size:16px;
 }
