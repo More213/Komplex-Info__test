@@ -135,7 +135,7 @@ input.toggleMenu:checked ~ .menu{
     position:relative;
     height:800px;
 }  
-@media screen and (max-width:640px){
+@media screen and (max-width:700px){
  
     footer{
     position:relative;
@@ -288,16 +288,16 @@ footer{
     z-index:2;
     max-width:100%;
     min-width:450px;
-    
     top:-190px;
     flex-shrink:10;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:700px){
     .contact__flex{
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    margin-bottom: 0px
 }
 }
 
@@ -309,7 +309,7 @@ footer{
 }
 .contact__background__grau{
     position:relative;
-    height:800px;
+    height:850px;
 }
 .contact__background__grau__two{
    max-width:100%;
@@ -320,7 +320,7 @@ footer{
     top:250px;
     z-index:-9
 }   
-@media screen and (max-width:640px){
+@media screen and (max-width:700px){
     .contact__flex{
     flex-direction:column;
     justify-content:center;
@@ -330,7 +330,7 @@ footer{
     max-width:100%;
     min-width:0px;
     background:#808d9d;
-    height:300px;
+    height:350px;
     position:relative;
     top:500px;
     z-index:-9
@@ -347,6 +347,32 @@ footer{
     .line{
     margin-left:0px;
     width: 100%
+}
+    footer{
+    background:#000;
+    height:102px;
+    margin-top: 50px;
+    min-width: 450px
+}
+    .contact__inf{
+    position:relative;
+    z-index:2;
+    max-width:100%;
+    min-width:450px;
+    top:-240px;
+    flex-shrink:10;
+}
+    .contact__cart{
+    position:relative;
+    background:#3f7594;
+    width:317px;
+    height:308px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top:10px;
+    margin-bottom: 20px
 }
 }
 
