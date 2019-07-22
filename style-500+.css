@@ -136,14 +136,9 @@ input.toggleMenu:checked ~ .menu{
     height:800px;
 }  
 @media screen and (max-width:700px){
- 
-    footer{
-    position:relative;
-    z-index:2;
-    bottom:-500px 
-}
+
     .content__footer{
-    justify-content:space-around
+    justify-content:space-between
 }
 
     .gallery{
@@ -230,6 +225,15 @@ input.toggleMenu:checked ~ .menu{
     top:300px
 }
 }
+@media screen and (max-width:620px){
+
+    .content__footer{
+    flex-direction: column;
+    justify-content: space-around
+}
+        footer{
+    height: 370px;}
+}
 .footer__left,
 .footer__right{
     font-size:10px;
@@ -239,10 +243,9 @@ input.toggleMenu:checked ~ .menu{
 }
 .footer__center{
     width:90px;
-    height:50px
+    height:90px
 }
 footer{
-    height:130px ;
     position:relative;
     z-index:2;
     bottom:-50px 
@@ -350,7 +353,7 @@ footer{
 }
     footer{
     background:#000;
-    height:102px;
+
     margin-top: 50px;
     min-width: 450px
 }
