@@ -229,22 +229,21 @@ input.toggleMenu:checked ~ .menu{
 
     .content__footer{
     flex-direction: column;
-    justify-content: space-around
+    justify-content: space-around;
 }
+    .footer__right{
+    height: 115px;
+}
+
         footer{
-    height: 370px;}
+    height: 350px;}
 }
 .footer__left,
 .footer__right{
-    font-size:10px;
-    width:174px;
     margin-left:10px;
-    margin-right:10px
+    margin-right:10px;
 }
-.footer__center{
-    width:90px;
-    height:90px
-}
+
 footer{
     position:relative;
     z-index:2;

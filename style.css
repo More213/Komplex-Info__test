@@ -199,7 +199,7 @@ header{
 }
 
 footer{
-    background:#000;
+    background:#181c23;
     height:200px
 }
 .content__footer{
@@ -215,15 +215,17 @@ footer{
 }
 
 .footer__right{
-    text-align:right
+    text-align:right;
+    margin-top: 15px
 }
-
-.footer__center{
+.footer__left{
+    margin-bottom: 10px
+}
+.footer__center,
+.footer__center>img{
     width:119px;
-    height:100px;
+    height:60px
 }
-
-
 .hidden_gray{
     position:relative;
     width:100%;
@@ -260,15 +262,12 @@ svg {
     font-size:13px;
     width:250px
 }
-
+   .footer__right ul{
+       margin-bottom: 10px
+    }
 .footer__right p{
     margin-bottom:20px
 }
-.footer__center{
-    width:119px;
-    height:61px;
-}
-
 .contact__inf{
     position:relative;
     z-index:2;
