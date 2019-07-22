@@ -11,6 +11,7 @@
     flex-direction:column;
     justify-content:space-between;
     height:auto;
+    min-width: 483px;
 }
 header{
     width:100%;
@@ -200,26 +201,19 @@ header{
 
 footer{
     background:#181c23;
-    height:200px
+    height:200px;
+    min-width: 450px
 }
-.content__footer{
-    margin-left:auto;
-    margin-right:auto;
-    width:1170px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    height:100%;
-    color:#fff
-}
+
 
 .footer__right{
     text-align:right;
-    margin-top: 15px
+    position: relative;
+    top: 2px
 }
-.footer__left{
-    margin-bottom: 10px
+.footer__center{
+    position: relative;
+    top: 10px
 }
 .footer__center,
 .footer__center>img{
@@ -235,23 +229,29 @@ svg {
     position:absolute;
     bottom:0;
     width:100%;
+    min-width: 450px;
     height:450px;
 }
 
 .contact__background__gray{
-        z-index:1
+        z-index:1;
+        min-width: 450px;
 }
 
 .content__footer{
+    position: relative;
     margin-left:auto;
     margin-right:auto;
     width:1170px;
+    min-width:400px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-start;
+    color:#fff;
     height:100%;
-    color:#fff
+    align-items: center
+    
 }
 .footer__td{
     vertical-align:top;
@@ -266,7 +266,7 @@ svg {
        margin-bottom: 10px
     }
 .footer__right p{
-    margin-bottom:20px
+    margin-bottom:18px
 }
 .contact__inf{
     position:relative;

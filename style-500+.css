@@ -1,18 +1,24 @@
 header{
     height:55px;
-    position:fixed;
+    position:sticky;
     z-index:999;
-    top:0px
+    top:0px;
+    min-width: 450px;
 }
 
-header,
+
 .mobil-menu,
 .main-menu,
 .content__footer,
+footer,
 .head{
     width:100%;
     max-width:1000px;
-    min-width:480px
+    min-width:450px
+}
+.content__footer,
+footer{
+    min-width: 450px
 }
 .head{
     flex-direction:column;
@@ -216,7 +222,7 @@ input.toggleMenu:checked ~ .menu{
     background:#808d9d;
     height:300px;
     position:relative;
-    top:500px;
+    top:499px;
     z-index:-9
 } 
     footer{
@@ -225,18 +231,33 @@ input.toggleMenu:checked ~ .menu{
     top:300px
 }
 }
-@media screen and (max-width:620px){
+@media screen and (max-width:640px){
 
     .content__footer{
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+
 }
     .footer__right{
     height: 115px;
+        text-align:left;
 }
 
         footer{
-    height: 350px;}
+    height: 270px;
+    }
+    
+    .footer__left{
+        margin-bottom: 0px;
+        width: 250px
+    }
+}
+.footer__center{
+    margin-top:0px;
+    margin-right: 10px;
+    top: 0px
 }
 .footer__left,
 .footer__right{
@@ -267,7 +288,7 @@ footer{
     background:#808d9d;
     height:300px;
     position:relative;
-    top:500px;
+    top:499px;
     z-index:-9
 } 
 
@@ -315,11 +336,11 @@ footer{
 }
 .contact__background__grau__two{
    max-width:100%;
-    min-width:0px;
+
     background:#808d9d;
     height:300px;
     position:relative;
-    top:250px;
+    top:249px;
     z-index:-9
 }   
 @media screen and (max-width:700px){
@@ -330,11 +351,11 @@ footer{
 }
 .contact__background__grau__two{
     max-width:100%;
-    min-width:0px;
+    min-width:450px;
     background:#808d9d;
     height:350px;
     position:relative;
-    top:500px;
+    top:499px;
     z-index:-9
 } 
 .contact__name>h2{
@@ -351,10 +372,7 @@ footer{
     width: 100%
 }
     footer{
-    background:#000;
-
-    margin-top: 50px;
-    min-width: 450px
+    margin-top: 49px;
 }
     .contact__inf{
     position:relative;
